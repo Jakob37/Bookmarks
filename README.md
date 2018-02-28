@@ -13,13 +13,7 @@ pics /home/myname/Pictures
 specproject /home/myname/Documents/projects/specific_project7
 ```
 
-## Example entries in .bashrc
+## Generating alias
 
-```
-alias bshow="bash /path/bookmarks/bookmarks.sh show"
-bgt() {
-    path=$(bash /path/bookmarks/bookmarks.sh goto "$1")
-    echo "Switching to ${path}"
-    cd ${path}
-}
-```
+By running the script `setup.sh` you will append a function in your .bashrc. You can then
+list paths by running `bm` and switch to instances by running `bm mylabel`.
